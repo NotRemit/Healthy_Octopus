@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Search from "./components/SearchPage";
+import Search from "./components/Search";
 import Subscription from "./components/Subscription";
 import Nutritionists from "./components/Nutritionists";
 import Cart from "./components/Cart";
