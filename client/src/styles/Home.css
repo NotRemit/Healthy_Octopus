@@ -79,7 +79,7 @@ html, body {
   padding: 20px;
   overflow-y: auto;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-color: #f0eef3;
+  background-color: #f7f7f7;
 }
 .footer {
   background-color: yellow;
@@ -126,4 +126,17 @@ button:hover {
 .details {
   color : gray;
   padding: "100px"
+}
+
+.food-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.food-image {
+  width: 3000px;  /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
 }

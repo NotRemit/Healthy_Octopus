@@ -25,13 +25,12 @@ function Home() {
         </div>
         
         <div className="recomendation">
-              <div className="recomendation-headline">Top Healthy Foods </div>
+          <div className="recomendation-headline">Top Healthy Foods</div>
             <div className="food-list">
-              <p>🥗 Quinoa Salad</p>
-              <p>🍲 Grilled Salmon</p>
-              <p>🍎 Fresh Fruit Bowl</p>
+              <img src="/healthy-food.png" alt="Healthy Food" className="food-image" />
             </div>
-        </div>
+          </div>
+
           <div className="details">
               <h3>Health Certifications</h3>
               <p>✅ FSSAI Certified</p>
