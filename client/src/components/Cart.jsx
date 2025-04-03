@@ -4,9 +4,9 @@ import "../styles/Cart.css"; // Link to the CSS file
 const Cart = () => {
   // Sample cart items (hardcoded for demonstration)
   const cartItems = [
-    { id: 1, name: "Grilled Chicken Salad", price: 250 },
-    { id: 2, name: "Quinoa Bowl", price: 200 },
-    { id: 3, name: "Avocado Toast", price: 180 },
+    { id: 1, name: "Grilled Veggie Burger", price: 250 },
+    { id: 2, name: "Lettuce-Wrapped Chicken Burger", price: 200 },
+    { id: 3, name: "Portobello Mushroom Burger", price: 180 },
   ];
 
   // Calculate total price

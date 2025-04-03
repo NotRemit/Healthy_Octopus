@@ -1,51 +1,133 @@
+/* Full Page Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  overflow: hidden; /* Prevent vertical scrolling */
+}
+
+/* Container */
 .nutritionists-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.nutritionists-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
-
-.nutritionist-card {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
   text-align: center;
-  width: 250px;
+  overflow: hidden;
 }
 
+/* Title */
+h1 {
+  color: #a593c7;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Horizontal Scroll Wrapper */
+.nutritionists-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 70vh; /* Adjust height to fit screen */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #a593c7 #f7f7f7;
+}
+
+/* Hide scrollbar for webkit browsers */
+.nutritionists-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.nutritionists-wrapper::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+.nutritionists-wrapper::-webkit-scrollbar-thumb {
+  background: #a593c7;
+  border-radius: 10px;
+}
+
+/* Nutritionist Card (Side by Side) */
+.nutritionist-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Adjust card width */
+  min-width: 300px; /* Keeps them side-by-side */
+  height: 100%;
+  margin: 0 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  scroll-snap-align: start;
+}
+
+.nutritionist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
 .nutritionist-image {
   width: 100%;
-  height: 200px;
-  border-radius: 8px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-h3 {
-  margin: 10px 0;
+/* Info Section */
+.nutritionist-info {
+  padding: 15px;
+}
+
+.nutritionist-info h3 {
+  margin: 10px 0 5px;
   color: #333;
 }
 
-p {
-  color: #666;
+.nutritionist-info p {
+  color: #777;
   font-size: 14px;
 }
 
-button {
-  background-color: #28a745;
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Book Button */
+.book-btn {
   margin-top: 10px;
+  padding: 12px 18px;
+  background-color: #FFA500;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #218838;
+.book-btn:hover {
+  background-color: #CC8400;
+}
+
+/* Icon inside button */
+.icon {
+  font-size: 18px;
 }

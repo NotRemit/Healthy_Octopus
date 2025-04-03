@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Nutritionists.css"; // Import CSS
+import "../styles/Nutritionists.css";
+import { FaCalendarCheck } from "react-icons/fa"; // Icon for better UX
 
 const nutritionists = [
   { id: 1, name: "Dr. Aryan Sharma", specialization: "Weight Management", image: "/images/n1.jpg" },
@@ -16,13 +17,19 @@ const Nutritionists = () => {
   return (
     <div className="nutritionists-container">
       <h1>Book a Nutritionist</h1>
-      <div className="nutritionists-grid">
+      <p className="subtitle">Get expert advice for a healthier lifestyle</p>
+
+      <div className="nutritionists-wrapper">
         {nutritionists.map((n) => (
           <div className="nutritionist-card" key={n.id}>
             <img src={n.image} alt={n.name} className="nutritionist-image" />
-            <h3>{n.name}</h3>
-            <p>{n.specialization}</p>
-            <button>Book Appointment</button>
+            <div className="nutritionist-info">
+              <h3>{n.name}</h3>
+              <p>{n.specialization}</p>
+              <button className="book-btn">
+                <FaCalendarCheck className="icon" /> Book Appointment
+              </button>
+            </div>
           </div>
         ))}
       </div>
