@@ -1,22 +1,70 @@
-.search {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  input {
-    padding: 8px;
-    margin-right: 5px;
-  }
-  
-  button {
-    padding: 8px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: darkblue;
-  }
-  
+.search-container {
+  text-align: center;
+  padding: 30px;
+  background: url("../images/healthy-background.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+}
+
+input {
+  padding: 12px;
+  width: 50%;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+.food-result {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.food-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.add-to-cart {
+  background: #4caf50;
+  color: white;
+  padding: 14px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #2e7d32;
+  transform: scale(1.05);
+}

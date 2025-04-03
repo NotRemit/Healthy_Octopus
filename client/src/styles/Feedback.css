@@ -1,31 +1,91 @@
-.feedback {
-    text-align: center;
-    padding: 20px;
+/* Full Page Centered Feedback Section */
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../images/healthy-green-bg.jpg") no-repeat center center/cover;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Feedback Heading */
+.feedback-container h1 {
+  font-size: 3rem;
+  color: #2e7d32; /* Deep Green */
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Feedback Input Fields */
+.feedback-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  text-align: left;
+}
+
+/* Labels */
+.feedback-form label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1b5e20; /* Dark Green */
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: 2px solid #388e3c;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.8);
+  color: #1b5e20;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #1b5e20; /* Darker Green */
+  box-shadow: 0px 0px 10px rgba(0, 150, 0, 0.5);
+}
+
+/* Submit Button */
+.feedback-form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.4rem;
+  background: #4caf50; /* Bright Green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.feedback-form button:hover {
+  background: #2e7d32; /* Deep Green */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-form {
+    width: 80%;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
+
+  .feedback-container h1 {
+    font-size: 2.5rem;
   }
-  
-  input, textarea, select {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #e65c00;
-  }
-  
+}
