@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../styles/Subscription.css';
 
 const plans = [
-  { name: 'Basic (3 months)', price: '₹3999/-', hd: false, ultraHd: false, screens: 1 },
-  { name: 'Standard (6 months)', price: '₹6999/-', hd: true, ultraHd: false, screens: 2 },
-  { name: 'Premium (12 months)', price: '₹11999/-', hd: true, ultraHd: true, screens: 4 }
+  { name: 'Basic (3 months)', price: '₹3999/-', hd: true, ultraHd: false, screens: false },
+  { name: 'Standard (6 months)', price: '₹6999/-', hd: true, ultraHd: true, screens: false },
+  { name: 'Premium (12 months)', price: '₹11999/-', hd: true, ultraHd: true, screens: true }
 ];
 
 function Subscription() {
@@ -37,21 +37,21 @@ function Subscription() {
         </thead>
         <tbody>
           <tr>
-            <td>HD Available</td>
+            <td>Weekly Diet Plans</td>
             {plans.map((plan) => (
               <td key={plan.name}>{plan.hd ? '✔' : '✖'}</td>
             ))}
           </tr>
           <tr>
-            <td>Ultra HD Available</td>
+            <td>Personalized Menu as per Goals</td>
             {plans.map((plan) => (
               <td key={plan.name}>{plan.ultraHd ? '✔' : '✖'}</td>
             ))}
           </tr>
           <tr>
-            <td>Screens you can watch at the same time</td>
+            <td>One on One conversation with Top Nutritionists</td>
             {plans.map((plan) => (
-              <td key={plan.name}>{plan.screens}</td>
+               <td key={plan.name}>{plan.screens ? '✔' : '✖'}</td>
             ))}
           </tr>
         </tbody>
