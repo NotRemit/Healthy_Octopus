@@ -1,18 +1,86 @@
-.subscription {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .plans div {
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: orange;
-    color: white;
-  }
-  
+.subscription-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #a593c7;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.plan {
+  background-color: #a593c7;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.plan:hover, .plan.selected {
+  background-color: #8b7aa8;
+  transform: scale(1.05);
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+th {
+  background-color: #a593c7;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e8e6f1;
+}
+
+tr{
+  color: #2c3e50;
+}
