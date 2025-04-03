@@ -5,9 +5,9 @@ import { FaShoppingCart } from "react-icons/fa"; // Importing cart icon
 const alternatives = {
   Burger: {
     options: [
-      { name: "Grilled Veggie Burger", image: "\images\grilled_veggy_burger.webp" },
-      { name: "Lettuce-Wrapped Chicken Burger", image: "\images\keto_lettuce_wrap_burger.jpg" },
-      { name: "Portobello Mushroom Burger", image: "\images\portabello_mushroom_burger.jpg" },
+      { name: "Grilled Veggie Burger", image: "\grilled_veggy_burger.webp" },
+      { name: "Lettuce-Wrapped Chicken Burger", image: "\keto_lettuce_wrap_burger.jpg" },
+      { name: "Portobello Mushroom Burger", image: "\portabello_mushroom_burger.jpg" },
     ],
     description: "These alternatives reduce unhealthy fats while increasing fiber and plant-based nutrients.",
   },
